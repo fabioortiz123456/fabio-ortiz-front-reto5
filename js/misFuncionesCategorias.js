@@ -47,23 +47,19 @@ function guardarInformacionCategorias(){
         
         url:"http://129.151.123.87:8080/api/Category/save",
        
-        
         success:function(response) {
                 console.log(response);
             console.log("Se guardo correctamente");
             alert("Se guardo correctamente");
             window.location.reload()
-    
         },
         
         error: function(jqXHR, textStatus, errorThrown) {
               window.location.reload()
             alert("No se guardo correctamente");
-    
-    
         }
-        });}
-
+        });
+    }
 }
 
 function actualizarInformacionCategorias(idElemento){

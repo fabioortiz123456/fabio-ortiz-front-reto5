@@ -15,6 +15,7 @@ function autoInicioCategoria(){
     
     })
 }
+
 //Manejador GET
 function traerInformacionSkate() {
     $.ajax({
@@ -57,6 +58,7 @@ function pintarRespuestaSkate(response){
     myTable+="</table>";
     $("#miListaSkate").html(myTable);
 }
+
 //Capturar informacion para Actualizar
 function cargarDatosSkate(id) {
     $.ajax({
@@ -129,6 +131,7 @@ function agregarSkate() {
             });
     //}
 }
+
 //Manejador DELETE
 function borrar(idElemento) {
     var elemento = {

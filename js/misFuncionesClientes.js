@@ -12,8 +12,8 @@ function autoInicioCliente(){
         }
     
     })
-
 }
+
 function pintarRespuesta2(respuesta){
 
     let myTable="<table>";
@@ -105,11 +105,11 @@ function actualizarInformacionCliente(idElemento){
 function borrarCliente(idElemento){
     let myData={
         idClient:idElemento
-    };
+    }
     let dataToSend=JSON.stringify(myData);
     console.log(dataToSend);
     $.ajax({
-        url:"http://129.151.123.87:8080/api/Client/"+idElemento,
+        url:"http://129.151.123.87:8080/api/Client/"+idElemento ,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
@@ -120,5 +120,6 @@ function borrarCliente(idElemento){
             alert("Se ha Eliminado.")
         }
     });
-
 }
+
+
